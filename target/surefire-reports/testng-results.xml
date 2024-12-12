@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-13T02:55:33 IST" name="JobBox Website Test Suite" finished-at="2024-12-13T02:55:47 IST" duration-ms="14001">
+    <groups>
+    </groups>
+    <test started-at="2024-12-13T02:55:33 IST" name="Functional Tests" finished-at="2024-12-13T02:55:47 IST" duration-ms="14001">
+      <class name="com.jobbox.AppTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.jobbox.AppTest@50b472aa]" started-at="2024-12-13T02:55:33 IST" name="setUp" finished-at="2024-12-13T02:55:34 IST" duration-ms="1269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testWebsiteAccessibility()[pri:0, instance:com.jobbox.AppTest@50b472aa]" started-at="2024-12-13T02:55:34 IST" name="testWebsiteAccessibility" finished-at="2024-12-13T02:55:35 IST" duration-ms="1051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebsiteAccessibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.jobbox.AppTest@50b472aa]" started-at="2024-12-13T02:55:35 IST" name="tearDown" finished-at="2024-12-13T02:55:35 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.jobbox.AppTest@50b472aa]" started-at="2024-12-13T02:55:35 IST" name="setUp" finished-at="2024-12-13T02:55:36 IST" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testWebsiteLoading()[pri:0, instance:com.jobbox.AppTest@50b472aa]" started-at="2024-12-13T02:55:36 IST" name="testWebsiteLoading" finished-at="2024-12-13T02:55:37 IST" duration-ms="889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebsiteLoading -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.jobbox.AppTest@50b472aa]" started-at="2024-12-13T02:55:37 IST" name="tearDown" finished-at="2024-12-13T02:55:37 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.jobbox.AppTest -->
+      <class name="com.jobbox.NavigationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.jobbox.NavigationTest@5f058f00]" started-at="2024-12-13T02:55:37 IST" name="setUp" finished-at="2024-12-13T02:55:38 IST" duration-ms="660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigationItemClickability()[pri:0, instance:com.jobbox.NavigationTest@5f058f00]" started-at="2024-12-13T02:55:38 IST" name="testNavigationItemClickability" finished-at="2024-12-13T02:55:44 IST" duration-ms="6486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationItemClickability -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.jobbox.NavigationTest@5f058f00]" started-at="2024-12-13T02:55:44 IST" name="tearDown" finished-at="2024-12-13T02:55:44 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.jobbox.NavigationTest@5f058f00]" started-at="2024-12-13T02:55:44 IST" name="setUp" finished-at="2024-12-13T02:55:45 IST" duration-ms="613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigationMenuItems()[pri:0, instance:com.jobbox.NavigationTest@5f058f00]" started-at="2024-12-13T02:55:45 IST" name="testNavigationMenuItems" finished-at="2024-12-13T02:55:47 IST" duration-ms="1926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationMenuItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.jobbox.NavigationTest@5f058f00]" started-at="2024-12-13T02:55:47 IST" name="tearDown" finished-at="2024-12-13T02:55:47 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.jobbox.NavigationTest -->
+    </test> <!-- Functional Tests -->
+  </suite> <!-- JobBox Website Test Suite -->
+</testng-results>

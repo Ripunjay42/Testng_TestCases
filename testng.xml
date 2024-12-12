@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JobBox Website Test Suite" parallel="tests" thread-count="2">
+    <test name="Functional Tests">
+        <classes>
+            <class name="com.jobbox.AppTest"/>
+            <class name="com.jobbox.NavigationTest"/>
+        </classes>
+    </test>
+</suite>
