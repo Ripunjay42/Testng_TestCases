@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [JobBox Website Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="tests" name="Functional Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.jobbox.DropdownTest">
+        <methods>
+          <include name="testDropdownMenuOnClick"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.jobbox.DropdownTest -->
+      <class name="com.jobbox.NavigationTest">
+        <methods>
+          <include name="testNavigationMenuItemsTwo"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.jobbox.NavigationTest -->
+    </classes>
+  </test> <!-- Functional Tests(failed) -->
+</suite> <!-- Failed suite [JobBox Website Test Suite] -->

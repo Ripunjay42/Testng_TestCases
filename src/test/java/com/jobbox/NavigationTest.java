@@ -35,30 +35,31 @@ public class NavigationTest {
     public void testNavigationMenuItems() {
         // Navigate to the website
         driver.get("https://jobbox-gules.vercel.app/");
-    
+
         // Wait for navigation to be present
-        WebElement navigation = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".hidden.md\\:flex")));
-    
+        WebElement navigation = wait
+                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".hidden.md\\:flex")));
+
         // Find all navigation items
         List<WebElement> navItems = navigation.findElements(By.cssSelector("a"));
-    
+
         // Extract navigation item texts
         List<String> navItemTexts = navItems.stream()
                 .map(WebElement::getText)
                 .filter(text -> !text.isEmpty())
                 .collect(Collectors.toList());
-    
+
         // Print navigation items for logging
         System.out.println("Navigation Items: " + navItemTexts);
-    
+
         // Verify minimum number of navigation items
         Assert.assertTrue(navItemTexts.size() >= 7,
                 "Expected at least 7 navigation items, found: " + navItemTexts.size());
-    
+
         // Expected navigation items based on the HTML
         List<String> expectedNavItems = List.of(
                 "Home", "About", "Gov.Jobs", "Pvt.Jobs", "Links", "Books", "Contact");
-    
+
         // Check if all expected items are present
         expectedNavItems.forEach(expectedItem -> Assert.assertTrue(
                 navItemTexts.stream().anyMatch(item -> item.trim().equalsIgnoreCase(expectedItem.trim())),
@@ -94,8 +95,8 @@ public class NavigationTest {
                 }
 
                 // Wait for page to load with more robust condition
-                wait.until(webDriver -> 
-                    ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+                wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState")
+                        .equals("complete"));
 
                 // Optional: Add small delay for dynamic content
                 Thread.sleep(500);
@@ -112,6 +113,41 @@ public class NavigationTest {
                 Assert.fail("Failed to navigate with item: " + navItemText, e);
             }
         }
+    }
+
+    @Test
+    public void testNavigationMenuItemsTwo() {
+        // Navigate to the website
+        driver.get("https://jobbox-gules.vercel.app/");
+
+        // Wait for navigation to be present
+        WebElement navigation = wait
+                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".hidden.md\\:flex")));
+
+        // Find all navigation items
+        List<WebElement> navItems = navigation.findElements(By.cssSelector("a"));
+
+        // Extract navigation item texts
+        List<String> navItemTexts = navItems.stream()
+                .map(WebElement::getText)
+                .filter(text -> !text.isEmpty())
+                .collect(Collectors.toList());
+
+        // Print navigation items for logging
+        System.out.println("Navigation Items: " + navItemTexts);
+
+        // Verify minimum number of navigation items
+        Assert.assertTrue(navItemTexts.size() >= 7,
+                "Expected at least 7 navigation items, found: " + navItemTexts.size());
+
+        // Expected navigation items based on the HTML
+        List<String> expectedNavItems = List.of(
+                "Home", "About", "Gov.Jobs", "Pvt.Jobs", "Links", "Books", "Contact", "navitem");
+
+        // Check if all expected items are present
+        expectedNavItems.forEach(expectedItem -> Assert.assertTrue(
+                navItemTexts.stream().anyMatch(item -> item.trim().equalsIgnoreCase(expectedItem.trim())),
+                "Navigation item '" + expectedItem + "' not found"));
     }
 
     @AfterMethod
